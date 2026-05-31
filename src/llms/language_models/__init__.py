@@ -4,6 +4,7 @@ from .longchat.longchat import Longchat
 from .base_language_model import BaseLanguageModel
 from .llama import Llama
 from .flan_t5 import FlanT5
+from .gemini import Gemini
 
 registed_language_models = {
     'gpt-4': ChatGPT,
@@ -13,6 +14,7 @@ registed_language_models = {
     'llama': Llama,
     'flan-t5': FlanT5,
     'rog': Llama,
+    'gemini-3.1-flash-lite': Gemini
 }
 
 def get_registed_model(model_name) -> BaseLanguageModel:
