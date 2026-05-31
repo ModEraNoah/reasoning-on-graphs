@@ -14,6 +14,8 @@ from multiprocessing import Pool
 from qa_prediction.build_qa_input import PromptBuilder
 from functools import partial
 
+from llms.language_models.gemini import GEMINI_MODELS
+
 
 def get_output_file(path, force=False):
     if not os.path.exists(path) or force:
@@ -129,7 +131,7 @@ def main(args, LLM):
             explain=args.explain,
             use_random=args.use_random,
             each_line=args.each_line,
-            maximun_token=model.maximun_token if args.model_name != "gemini-3.1-flash-lite" else model.maximum_token,
+            maximun_token=model.maximun_token if args.model_name not in GEMINI_MODELS else model.maximum_token,
             tokenize=model.tokenize,
         )
         print("Prepare pipline for inference...")
