@@ -3,11 +3,10 @@ name = "content"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = "==3.10.20"
 dependencies = [
     "accelerate>=0.30",
     "datasets==2.14.4",
-    "deepspeed>=0.14",
     "dotenv>=0.9.9",
     "fsspec==2023.9.2",
     "google-genai",
@@ -29,3 +28,6 @@ dependencies = [
     "trl==0.7.1",
     "wandb==0.15.8",
 ]
+
+[tool.uv.extra-build-dependencies]
+graph-walker = ["pybind11"]
