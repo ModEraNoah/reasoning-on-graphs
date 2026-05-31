@@ -129,7 +129,7 @@ def main(args, LLM):
             explain=args.explain,
             use_random=args.use_random,
             each_line=args.each_line,
-            maximun_token=model.maximun_token,
+            maximun_token=model.maximun_token if args.model_name != "gemini-3.1-flash-lite" else model.maximum_token,
             tokenize=model.tokenize,
         )
         print("Prepare pipline for inference...")
