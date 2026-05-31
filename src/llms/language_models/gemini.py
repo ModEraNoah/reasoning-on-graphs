@@ -15,6 +15,7 @@ GEMINI_MODELS = [
     "gemini-2.5-flash",
     "gemini-1.5-pro",
     "gemini-1.5-flash",
+    "gemma-4-31b-it"
 ]
 
 client = genai.Client(

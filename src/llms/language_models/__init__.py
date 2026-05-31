@@ -14,7 +14,8 @@ registed_language_models = {
     'llama': Llama,
     'flan-t5': FlanT5,
     'rog': Llama,
-    'gemini-3.1-flash-lite': Gemini
+    'gemini-3.1-flash-lite': Gemini,
+    'gemma-4-31b-it': Gemini
 }
 
 def get_registed_model(model_name) -> BaseLanguageModel:
