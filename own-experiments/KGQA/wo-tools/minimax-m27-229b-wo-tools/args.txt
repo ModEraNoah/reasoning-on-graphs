@@ -1,0 +1,20 @@
+{
+  "data_path": "rmanluo",
+  "d": "/home/noah/RoG-webqsp",
+  "split": "validation",
+  "predict_path": "own-experiments/KGQA/wo-tools/minimax-m27-229b-wo-tools",
+  "model_name": "minimax-m27-229b-wo-tools",
+  "prompt_path": "prompts/general_prompt.txt",
+  "add_rule": true,
+  "use_true": false,
+  "cot": false,
+  "explain": false,
+  "use_random": false,
+  "each_line": false,
+  "rule_path": "results/gen_rule_path/RoG-webqsp/RoG/validation/predictions_3_False.jsonl",
+  "force": false,
+  "n": 1,
+  "filter_empty": false,
+  "debug": false,
+  "retry": 5
+}

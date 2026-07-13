@@ -1,0 +1,20 @@
+{
+  "data_path": "rmanluo",
+  "d": "/home/noah/RoG-webqsp",
+  "split": "validation",
+  "predict_path": "own-experiments/KGQA/kit.minimax-m2.7-229b-explain",
+  "model_name": "kit.minimax-m2.7-229b",
+  "prompt_path": "prompts/general_prompt.txt",
+  "add_rule": true,
+  "use_true": false,
+  "cot": false,
+  "explain": true,
+  "use_random": false,
+  "each_line": false,
+  "rule_path": "results/gen_rule_path/RoG-webqsp/RoG/validation/predictions_3_False.jsonl",
+  "force": false,
+  "n": 1,
+  "filter_empty": false,
+  "debug": false,
+  "retry": 5
+}

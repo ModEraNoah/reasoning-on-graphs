@@ -1,0 +1,20 @@
+{
+  "data_path": "rmanluo",
+  "d": "/home/noah/RoG-webqsp",
+  "split": "validation",
+  "predict_path": "own-experiments-few_shot/KGQA/google-relation-kit.gemma4-31b-it",
+  "model_name": "kit.gemma4-31b-it",
+  "prompt_path": "prompts/general_prompt.txt",
+  "add_rule": true,
+  "use_true": false,
+  "cot": false,
+  "explain": false,
+  "use_random": false,
+  "each_line": false,
+  "rule_path": "own-experiments-few_shot/gen_rule_path/RoG-webqsp/google/gemma-2-9b/validation/predictions_3_False.jsonl",
+  "force": false,
+  "n": 1,
+  "filter_empty": false,
+  "debug": false,
+  "retry": 5
+}
