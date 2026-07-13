@@ -114,9 +114,15 @@ def main(args, LLM):
         rule_postfix += "_each_line"
         
     print("Load dataset from finished")
-    output_dir = os.path.join(
-        args.predict_path, args.d, args.model_name, args.split, rule_postfix
-    )
+    output_dir = ""
+
+    if args.predict_path == "results/KGQA":
+        output_dir = os.path.join(
+            args.predict_path, args.d, args.model_name, args.split, rule_postfix
+        )
+    else:
+        output_dir = os.path.join(args.predict_path)
+
     print("Save results to: ", output_dir)
     # Predict
     if not os.path.exists(output_dir):
