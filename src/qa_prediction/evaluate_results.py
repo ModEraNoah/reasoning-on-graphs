@@ -65,7 +65,7 @@ def extract_topk_prediction(prediction, k=-1):
 
 def eval_result(predict_file, cal_f1=True, topk = -1):
     # predict_file = os.path.join(result_path, 'predictions.jsonl')
-    eval_name = "detailed_eval_result_top_{topk}.jsonl" if topk > 0 else 'detailed_eval_result.jsonl'
+    eval_name = f"detailed_eval_result_top_{topk}.jsonl" if topk > 0 else 'detailed_eval_result.jsonl'
     detailed_eval_file = predict_file.replace('predictions.jsonl', eval_name)
     # Load results
     acc_list = []
@@ -110,7 +110,7 @@ def eval_result(predict_file, cal_f1=True, topk = -1):
     else:
         result_str = "Accuracy: " + str(sum(acc_list) * 100 / len(acc_list)) + " Hit: " + str(sum(hit_list) * 100 / len(hit_list))
     print(result_str)
-    result_name = "eval_result_top_{topk}.txt" if topk > 0 else 'eval_result.txt'
+    result_name = f"eval_result_top_{topk}.txt" if topk > 0 else 'eval_result.txt'
     eval_result_path = predict_file.replace('predictions.jsonl', result_name)
     with open(eval_result_path, 'w') as f:
         f.write(result_str)
