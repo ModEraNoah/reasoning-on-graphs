@@ -105,6 +105,8 @@ class Gemini(BaseLanguageModel):
 
             try:
 
+                time.sleep(4)
+
                 response = client.models.generate_content(
                     model=self.model_name,
                     contents=llm_input,
@@ -116,9 +118,13 @@ class Gemini(BaseLanguageModel):
 
                 print("Message:", llm_input)
                 print("Number of token:", self.tokenize(llm_input))
-                print(e)
 
-                time.sleep(30)
+                sleep_time = 40
+
+                if str(e).startswith("500"):
+                    sleep_time = 80
+
+                time.sleep(sleep_time)
                 cur_retry += 1
 
         return None
