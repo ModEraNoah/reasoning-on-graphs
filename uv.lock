@@ -371,6 +371,7 @@ dependencies = [
 [package.dev-dependencies]
 dev = [
     { name = "ipykernel" },
+    { name = "loadenv" },
 ]
 
 [package.metadata]
@@ -401,7 +402,10 @@ requires-dist = [
 ]
 
 [package.metadata.requires-dev]
-dev = [{ name = "ipykernel", specifier = ">=7.2.0" }]
+dev = [
+    { name = "ipykernel", specifier = ">=7.2.0" },
+    { name = "loadenv", specifier = ">=0.1.1" },
+]
 
 [[package]]
 name = "cryptography"
@@ -1175,6 +1179,15 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/da/34/28fff3ab31ccff1fd4f6c7c7b0ceb2b6968d8ea4950663eadcb5720591a0/lark-1.3.1.tar.gz", hash = "sha256:b426a7a6d6d53189d318f2b6236ab5d6429eaf09259f1ca33eb716eed10d2905", size = 382732, upload-time = "2025-10-27T18:25:56.653Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/82/3d/14ce75ef66813643812f3093ab17e46d3a206942ce7376d31ec2d36229e7/lark-1.3.1-py3-none-any.whl", hash = "sha256:c629b661023a014c37da873b4ff58a817398d12635d3bbb2c5a03be7fe5d1e12", size = 113151, upload-time = "2025-10-27T18:25:54.882Z" },
+]
+
+[[package]]
+name = "loadenv"
+version = "0.1.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/d7/a2/4ef0013d1683cdcd29ea254e3a02ac43f25323842fc8d59983eb17608f47/loadenv-0.1.1.tar.gz", hash = "sha256:8dde4a80cf733323880c118659685d822f9d1311fa15b3d7e1e2aa28223aba29", size = 7456, upload-time = "2021-09-22T22:19:41.369Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d0/ba/e29b2a5d12d5fad9c037ad7d5c3dffb22864d6511310bffa414c56408995/loadenv-0.1.1-py3-none-any.whl", hash = "sha256:e06a1d86ea1ad89a96aeb470d27de8d569a980ad7c6fd0dd0ee416cc11919853", size = 6899, upload-time = "2021-09-22T22:19:32.26Z" },
 ]
 
 [[package]]
