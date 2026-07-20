@@ -1,0 +1,20 @@
+{
+  "data_path": "rmanluo",
+  "d": "/home/noah/RoG-webqsp",
+  "split": "validation",
+  "predict_path": "own-experiments/KGQA/wo-tools/gemini-3.1-flash-lite-wo-tools",
+  "model_name": "gemini-3.1-flash-lite",
+  "prompt_path": "prompts/general_prompt_only_return_answer.txt",
+  "add_rule": true,
+  "use_true": false,
+  "cot": false,
+  "explain": false,
+  "use_random": false,
+  "each_line": false,
+  "rule_path": "results/gen_rule_path/RoG-webqsp/RoG/validation/predictions_3_False.jsonl",
+  "force": false,
+  "n": 1,
+  "filter_empty": false,
+  "debug": false,
+  "retry": 5
+}
