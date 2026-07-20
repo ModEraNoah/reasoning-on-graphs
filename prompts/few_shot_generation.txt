@@ -1,0 +1,12 @@
+{instruction}
+
+{input}
+
+Generate the relation path following the given structure:
+<PATH> r1 <SEP> r2 <SEP> … <SEP> rn </PATH>
+
+Examples:
+<PATH> award.award_nomination.award_nominee <SEP> people.person.profession </PATH>
+<PATH> people.person.nationality <SEP> people.person.languages </PATH>
+<PATH> aviation.airliner_accident.operator <SEP> business.business_operation.industry <SEP> type.type.properties</PATH>
+
